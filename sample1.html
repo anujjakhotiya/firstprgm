@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Digital Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            width: 320px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .emoji {
+            font-size: 60px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .skills {
+            margin: 20px 0;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+
+        button {
+            background: #764ba2;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #667eea;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="emoji">👨‍💻</div>
+
+        <h1>Hi, I'm Anuj!</h1>
+
+        <p>Welcome to my little corner of the web 🚀</p>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">Python</span>
+            <span class="skill">AI/ML</span>
+        </div>
+
+        <button onclick="showMessage()">
+            Click Me ✨
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Keep learning, keep creating! 🌟";
+        }
+    </script>
+
+</body>
+</html>
